@@ -10,7 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logito.jpeg" rel="icon">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+  <script src="https://kit.fontawesome.com/f0c8b6ea95.js" crossorigin="anonymous"></script>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -29,6 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/redesociales.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,9 +40,9 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Dr. Miguel Boto</a></h1>
+      <!-- <h1 class="logo me-auto"><a href="index.html">Dr. Miguel Boto</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logito.jpeg" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -153,10 +156,9 @@
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> 
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>
                     Doctorado en ......
-                    <i class="bx bx-chevron-down icon-show"></i><i
-                      class="bx bx-chevron-up icon-close"></i></a>
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
                       Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
@@ -230,9 +232,13 @@
               </p>
               <p>
                 <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia"
-                  target="_blank" class="btn btn-success">whatsapp</a>
+                  target="_blank" class="btn btn-success">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
                 <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
-                  target="_blank" class="btn btn-danger">gmail</a>
+                  target="_blank" class="btn btn-danger">
+                  <i class="bi bi-envelope"></i>
+                </a>
               </p>
             </div>
           </div>
@@ -246,11 +252,26 @@
               <p>Seccion de descripcion</p>
               <p>
               <h6>Hacer cita</h6>
-              <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia" target="_blank"
-                class="btn btn-success">whatsapp</a>
-              <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
-                target="_blank" class="btn btn-danger">gmail</a>
-              </p>
+
+              <div class="contenedor">
+                <div class="redes-sociales">
+                  <div class="contenedor-icono">
+                    <a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+                      <i class="fab fa-google"></i>
+                    </a>
+                  </div>
+                  <div class="contenedor-icono">
+                    <a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div class="contenedor-icono">
+                    <a href="http://www.instagram.com" target="_blank" class="instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -538,23 +559,31 @@
           <div class="col-lg-4 shadow-lg" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <h3>Consulta de Obstetricia</h3>
-              <h4><sup>$</sup>0</h4>
+              <h4><sup>$</sup>10</h4>
               <ul>
                 <p class="text-danger"></p>
                 <li><i class="bx bx-check"></i> <span class="text-danger">el lugar de lista un parrafo de
                     description</span> </li>
-                <li><i class="bx bx-check"></i> Algo a añadi</li>
-                <li><i class="bx bx-check"></i> Algo a añadi</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
-              <p>
-                <span class="text-danger">en lugar de las palabras whatsapp y gmail puede ir un icono</span> <br>
-                <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia"
-                  target="_blank" class="btn btn-success">whatsapp</a>
-                <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
-                  target="_blank" class="btn btn-danger">gmail</a>
-              </p>
+              <br>
+              <h5>Hacer cita</h5>
+              <div class="contenedor">
+                <div class="redes-sociales">
+                  <div class="contenedor-icono">
+                    <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia"
+                      target="_blank" class="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                  <div class="contenedor-icono">
+                    <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
+                      target="_blank" class="gmail">
+                      <i class="fa-solid fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -563,13 +592,28 @@
               <h3>Control de embarazo normal y alto riesgo</h3>
               <h4><sup>$</sup>29</h4>
               <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                <p class="text-danger"></p>
+                <li><i class="bx bx-check"></i> <span class="text-danger">el lugar de lista un parrafo de
+                    description</span> </li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <h5>Hacer cita</h5>
+              <div class="contenedor">
+                <div class="redes-sociales">
+                  <div class="contenedor-icono">
+                    <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia"
+                      target="_blank" class="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                  <div class="contenedor-icono">
+                    <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
+                      target="_blank" class="gmail">
+                      <i class="fa-solid fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -578,16 +622,29 @@
               <h3>Consulta ginecogica</h3>
               <h4><sup>$</sup>49</h4>
               <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                <p class="text-danger"></p>
+                <li><i class="bx bx-check"></i> <span class="text-danger">el lugar de lista un parrafo de
+                    description</span> </li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
-              <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia" target="_blank"
-                class="buy-btn">consulta whatsapp</a>
-              <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
-                target="_blank" class="buy-btn">consulta gmail</a>
+              <br>
+              <h5>Hacer cita</h5>
+              <div class="contenedor">
+                <div class="redes-sociales">
+                  <div class="contenedor-icono">
+                    <a href="https://api.whatsapp.com/send?phone=+50371377841&text=consulta%20de%20Obtetricia"
+                      target="_blank" class="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                  <div class="contenedor-icono">
+                    <a href="mailto:bezisaac@gmail.com?subject=Consulta%20ginecologica&body=lorem%20ipsum%20test%20gmail%20mailto"
+                      target="_blank" class="gmail">
+                      <i class="fa-solid fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -715,10 +772,6 @@
                 <h4>Teléfono:</h4>
                 <p>+503 7092-7191</p>
               </div>
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -751,7 +804,17 @@
               <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
           </div>
-
+        </div>
+        <div class="section-title">
+          <h2 class="pt-5 pb-0">Ubicación</h2>
+        </div>
+        <div class="row pt-0">
+          <div class="col-md-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d30973.007207478517!2d-89.56932307773948!3d13.980859222759149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d13.971993399999999!2d-89.5403187!4m3!3m2!1d13.9948731!2d-89.5633031!5e0!3m2!1ses-419!2ssv!4v1664602365579!5m2!1ses-419!2ssv"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
       </div>
@@ -796,9 +859,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>10:00 am - 3:00 pm</td>
+                </tr>
+                <tr>
+                  <td>Sin cerrar al mediodía</td>
                 </tr>
               </tbody>
             </table>
@@ -806,13 +870,20 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Redes sociales</h4>
-            <p>Siguenos en nuestras redes sociales</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <span>Siguenos</span>
+            <div class="contenedor">
+              <div class="redes-sociales">
+                <div class="contenedor-icono">
+                  <a href="https://www.facebook.com/clinicateo7.7" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="contenedor-icono">
+                  <a href="https://www.instagram.com/clinicasteo77/" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
