@@ -391,19 +391,19 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# inicio Section
 --------------------------------------------------------------*/
-#hero {
+#inicio {
   width: 100%;
   height: 80vh;
   background: #37517e;
 }
 
-#hero .container {
+#inicio .container {
   padding-top: 72px;
 }
 
-#hero h1 {
+#inicio h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -411,13 +411,13 @@ h6 {
   color: #fff;
 }
 
-#hero h2 {
+#inicio h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#inicio .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -431,11 +431,11 @@ h6 {
   background: #47b2e4;
 }
 
-#hero .btn-get-started:hover {
+#inicio .btn-get-started:hover {
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
+#inicio .btn-watch-video {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -445,7 +445,7 @@ h6 {
   line-height: 1;
 }
 
-#hero .btn-watch-video i {
+#inicio .btn-watch-video i {
   line-height: 0;
   color: #fff;
   font-size: 32px;
@@ -453,57 +453,57 @@ h6 {
   margin-right: 8px;
 }
 
-#hero .btn-watch-video:hover i {
+#inicio .btn-watch-video:hover i {
   color: #47b2e4;
 }
 
-#hero .animated {
+#inicio .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
-  #hero {
+  #inicio {
     height: 100vh;
     text-align: center;
   }
 
-  #hero .animated {
+  #inicio .animated {
     -webkit-animation: none;
     animation: none;
   }
 
-  #hero .hero-img {
+  #inicio .inicio-img {
     text-align: center;
   }
 
-  #hero .hero-img img {
+  #inicio .inicio-img img {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #inicio h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #inicio h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  #hero .hero-img img {
+  #inicio .inicio-img img {
     width: 70%;
   }
 }
 
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  #inicio .inicio-img img {
     width: 80%;
   }
 
-  #hero .btn-get-started {
+  #inicio .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
@@ -860,47 +860,47 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# servicios
 --------------------------------------------------------------*/
-.services .icon-box {
+.servicios .icon-box {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
 }
 
-.services .icon-box .icon {
+.servicios .icon-box .icon {
   margin-bottom: 10px;
 }
 
-.services .icon-box .icon i {
+.servicios .icon-box .icon i {
   color: #47b2e4;
   font-size: 36px;
   transition: 0.3s;
 }
 
-.services .icon-box h4 {
+.servicios .icon-box h4 {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.servicios .icon-box h4 a {
   color: #37517e;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box p {
+.servicios .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.servicios .icon-box:hover {
   transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
+.servicios .icon-box:hover h4 a {
   color: #47b2e4;
 }
 
@@ -1421,9 +1421,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contacto
 --------------------------------------------------------------*/
-.contact .info {
+.contacto .info {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
   padding: 30px;
@@ -1432,7 +1432,7 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-.contact .info i {
+.contacto .info i {
   font-size: 20px;
   color: #47b2e4;
   float: left;
@@ -1446,7 +1446,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contacto .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -1454,22 +1454,22 @@ section {
   color: #37517e;
 }
 
-.contact .info p {
+.contacto .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #6182ba;
 }
 
-.contact .info .email p {
+.contacto .info .email p {
   padding-top: 5px;
 }
 
-.contact .info .social-links {
+.contacto .info .social-links {
   padding-left: 60px;
 }
 
-.contact .info .social-links a {
+.contacto .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -1484,19 +1484,19 @@ section {
   margin-right: 10px;
 }
 
-.contact .info .social-links a:hover {
+.contacto .info .social-links a:hover {
   background: #47b2e4;
   color: #fff;
 }
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contacto .info .email:hover i,
+.contacto .info .address:hover i,
+.contacto .info .phone:hover i {
   background: #47b2e4;
   color: #fff;
 }
 
-.contact .php-email-form {
+.contacto .php-email-form {
   width: 100%;
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
@@ -1505,11 +1505,11 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contacto .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contacto .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1517,7 +1517,7 @@ section {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contacto .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1526,11 +1526,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contacto .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contacto .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1539,14 +1539,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contacto .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contacto .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1559,36 +1559,36 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form .form-group {
+.contacto .php-email-form .form-group {
   margin-bottom: 20px;
 }
 
-.contact .php-email-form label {
+.contacto .php-email-form label {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contacto .php-email-form input,
+.contacto .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contacto .php-email-form input:focus,
+.contacto .php-email-form textarea:focus {
   border-color: #47b2e4;
 }
 
-.contact .php-email-form input {
+.contacto .php-email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contacto .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contacto .php-email-form button[type=submit] {
   background: #47b2e4;
   border: 0;
   padding: 12px 34px;
@@ -1597,7 +1597,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contacto .php-email-form button[type=submit]:hover {
   background: #209dd8;
 }
 
@@ -1729,11 +1729,11 @@ section {
   background: #fff;
 }
 
-#footer .footer-top .footer-contact {
+#footer .footer-top .footer-contacto {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-contact h3 {
+#footer .footer-top .footer-contacto h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
@@ -1743,7 +1743,7 @@ section {
   color: #37517e;
 }
 
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-contacto p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
