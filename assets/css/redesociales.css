@@ -18,7 +18,7 @@ div.contenedor .redes-sociales a {
     transition: .3s ease all;
 }
 
-div.contenedor .redes-sociales .linkedin {background: #0073b1;}
+div.contenedor .redes-sociales .linkedin {background: #0073b1;  }
 div.contenedor .redes-sociales .facebook {background: #3b5998;}
 div.contenedor .redes-sociales .instagram {background: #c13584;}
 div.contenedor .redes-sociales .whatsapp {background: #07BF4A;}
