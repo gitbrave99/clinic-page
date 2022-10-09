@@ -42,11 +42,14 @@ div.contenedor .contenedor-icono:hover a {
     }
 }
 
+.portada{
 
+    width: 100%;
+    height: 199vh;
+    max-height: 199vh;
+    background: url("../img/portada.jpeg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -19px;
 
-.jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius: 0.3rem;
 }
