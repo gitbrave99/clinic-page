@@ -107,7 +107,7 @@ h6 {
 #header.header-scrolled,
 #header.header-inner-pages {
   /* background: rgba(40, 58, 90, 0.9); */
-  background:  #F4DBEF;
+  background:  #af5e99;
 }
 
 #header .logo {
@@ -168,7 +168,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #af5e99;
+  color: #F4DBEF;
 }
 
 .navbar .getstarted,
@@ -285,7 +285,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: #af5e99;
   transition: 0.3s;
   z-index: 999;
 }
@@ -540,7 +540,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #af5e99;
   bottom: 0;
   left: calc(50% - 20px);
 }
