@@ -1369,3 +1369,8 @@ section {
 
 
 /* IMAGE RESPONSIVE */
+/* FONT DESCRIPTION */
+.pdesc{
+  line-height: 28px;
+  font-size: 14px;
+}
