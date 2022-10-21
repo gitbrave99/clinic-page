@@ -168,7 +168,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #F4DBEF;
+  color: #E362EB;
 }
 
 .navbar .getstarted,
@@ -368,6 +368,9 @@ h6 {
   height: 80vh;
   /* background: #37517e; */
   background:  #af5e99;
+  background: url(../img/portadam.jpeg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 #inicio .container {
@@ -1363,3 +1366,6 @@ section {
     padding-top: 4px;
   }
 }
+
+
+/* IMAGE RESPONSIVE */
