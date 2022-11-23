@@ -31,6 +31,13 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/redesociales.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('FNnbLjJNTEjuap2sD');
+    })();
+</script>
 </head>
 
 <body>
@@ -38,7 +45,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
       <a href="index.html" class="logo me-auto"><img src="assets/img/logot.png" alt="" class="img-fluid"
-          style="width: 20vh; height: 60vh;"></a>
+          style="width: 15vw; height: 20vh;"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -58,16 +65,16 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
           data-aos="fade-up" data-aos-delay="200">
-          <h1 class="text-white"> Miguel Botto </h1>
-          <h2 class="text-white">Médico especialista en Ginecología y Obstetricia</h2>
+          <h1   style="color: #8D0C97;"> Miguel Botto </h1>
+          <h2 style="color: #BE06CD;">Médico especialista en Ginecología y Obstetricia</h2>
           <!-- <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto" style="background: #af5e99;">Hacer Cita</a>
           </div> -->
         </div>
-        <div class="col-md-5 col-lg-5 order-1 offset-md-1 order-lg-2 inicio-img" data-aos="zoom-in"
-          data-aos-delay="200">
+        <!-- <div class="col-md-5 col-lg-5 order-1 offset-md-1 order-lg-2 inicio-img" data-aos="zoom-in"
+          data-aos-delay="200"> -->
           <!-- <img src="assets/img/portada2.jpeg" class="img-fluid animated" alt="" style="height: 74vh; width: 100%;"> -->
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </section>
@@ -82,7 +89,7 @@
               <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
               <!-- <div class="icon"><img src="assets/img/mision.png" alt=""></div> -->
               <h4 class="text-center" style="color: #af5e99;">Misión</h4>
-              <p class="text-justify text-dark" style="font-size: 14px;">
+              <p class="text-justify text-dark">
                 Ser una excelente opción ante tanta oferta de servicios Gineco Obstétricos en el departamento de Santa
                 Ana, no solo económicamente, sino que profesionalmente a través del ofrecimiento de un servicio solido
                 basado en la experiencia clínica, y sobre todo con mucha empatía, basado en el conocimiento de las
@@ -128,7 +135,7 @@
 
         <div class="row content mt-3">
           <div class="col-lg-6 ">
-            <p class="text-dark">
+            <p class="text-justify text-dark pdesc">
               Graduado de la Universidad de San Carlos de Guatemala como Medico y Cirujano.
               <br>
               Incorporado a El Salvador como Doctor en Medicina.
@@ -146,7 +153,7 @@
             </ul> -->
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p class="text-dark">
+            <p class="text-dark pdesc">
               Durante el tiempo que estuve en el Hospital llegué a fungir como Jefe de Departamento de
               Gineco-Obstetricia de la Universidad Evangélica del Salvador. Durante este tiempo obtuve una Maestría en
               Administración y Docencia Universitaria en dicha Universidad.
@@ -352,16 +359,16 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="email" class="text-dark">Correo</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="email" id="email" v-model="emlEmisor" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="subject" class="text-dark">Asunto</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <label for="asunto" class="text-dark">Asunto</label>
+                <input type="text" class="form-control" name="asunto" id="asunto" v-model="asunto" required>
               </div>
               <div class="form-group">
                 <label for="message" class="text-dark">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" v-model="message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -491,7 +498,54 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (ev) => {
+        document.querySelectorAll("#frmRecoveryPass .dl").forEach((ele) => {
+            // ele.className = "form-group mb-2 bmd-form-group is-filled";
+            ele.classList.add('is-filled');
+            console.log(ele);
+        });
+    });
+    // receptor = miguelitobotto@gmail.com
+    var vueAppPass = new Vue({
+        el: '#frmSendMessage',
+        data: {
+            name: '',
+            message: '',
+            emldestino: 'juantomo20@gmail.com',
+            emlEmisor: '',
+            asunto: '',
+            subcabecera: 'Datos del estudiante',
+            footer: '',
+            ResponseMensaje: '',
+            mEnviado: false
+        },
+        methods: {
+            sendEmail(e) {
+                try {
+                    emailjs.sendForm('service_kpqoydr', 'template_43rb2rd', e.target,
+                        'user_Zh2tv7HnR1a3m019Hh0rs', {
+                        name: this.name,
+                        message: this.message,
+                        emldestino: this.emldestino,
+                        emlEmisor: this.emlEmisor,
+                        cabecera: this.asunto,
+                        subcabecera: this.subcabecera,
+                        footer: ''
+                    });
+                    this.mEnviado = true;
+                    this.ResponseMensaje = "Mensaje enviado";
+
+                } catch (error) {
+                    console.log({ error });
+                    this.mEnviado = false;
+                    this.ResponseMensaje = "Ocurrio un problema";
+                }
+            },
+        }
+    });
+</script>
 </body>
-
 </html>
